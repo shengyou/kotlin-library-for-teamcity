@@ -17,7 +17,5 @@ class CalculatorTest : FunSpec({
                 calculator.add(2.0, 2.0) shouldBe 4.0
             }
         }
-
     }
-
 })

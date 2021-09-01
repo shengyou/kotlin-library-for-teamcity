@@ -4,6 +4,7 @@ val kotestVersion: String by project
 
 plugins {
     kotlin("jvm") version "1.5.30"
+    id("io.gitlab.arturbosch.detekt") version("1.18.1")
 }
 
 group = "io.kraftsman"

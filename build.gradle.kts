@@ -5,7 +5,9 @@ val detektVersion: String by project
 
 plugins {
     kotlin("jvm") version "1.5.30"
+    application
     id("io.gitlab.arturbosch.detekt") version("1.18.1")
+    id("com.github.johnrengelman.shadow") version("7.0.0")
 }
 
 group = "io.kraftsman"
@@ -30,4 +32,8 @@ tasks.test {
 
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "11"
+}
+
+application {
+    mainClassName = "io.kraftsman.AppKt"
 }

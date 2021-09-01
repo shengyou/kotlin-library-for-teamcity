@@ -18,7 +18,18 @@ class CalculatorTest : FunSpec({
             }
         }
 
-        context("Can compatible with Int and Double when dev") {
+        context("Can compatible with Int and Double when multiple") {
+            test("Should return 1.0 when 1 * 1") {
+                val calculator = Calculator()
+                calculator.multiple(1, 1) shouldBe 1.0
+            }
+            test("Should return 4.0 when 2.0 * 2.0") {
+                val calculator = Calculator()
+                calculator.multiple(2.0, 2.0) shouldBe 4.0
+            }
+        }
+
+        context("Can compatible with Int and Double when div") {
             test("Should return 3.0 when 6 / 2") {
                 val calculator = Calculator()
                 calculator.div(6, 2) shouldBe 3.0

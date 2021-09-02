@@ -6,6 +6,7 @@ val detektVersion: String by project
 plugins {
     kotlin("jvm") version "1.5.30"
     application
+    id("org.jetbrains.dokka") version("1.5.0")
     id("io.gitlab.arturbosch.detekt") version("1.18.1")
     id("com.github.johnrengelman.shadow") version("7.0.0")
 }
